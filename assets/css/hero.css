@@ -1,0 +1,39 @@
+.hero {
+  background-color: var(--primary-color);
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: 1fr 1fr 2fr 2fr;
+  box-sizing: border-box;
+  padding: 7rem 2rem 0;
+  position: relative;
+}
+
+.hero .title {
+  grid-column: 1 / 4;
+  grid-row: 1 / 3;
+  color: #fff;
+  font-size: 7rem;
+  text-shadow: 5px 5px 20px var(--shadow);
+  line-height: 6rem;
+}
+.hero .hero-img {
+  grid-column: 2 / 6;
+  grid-row: 3 / 5;
+  height: 100%;
+  object-fit: contain;
+  object-position: bottom;
+}
+.hero .tip {
+  position: absolute;
+  width: max-content;
+  color: #fff;
+  left: 5%;
+  bottom: 5%;
+  transform: rotate(-90deg);
+  transform-origin: left top;
+  transition: bottom .3s ease-in-out;
+}
+
+.hero .tip:hover {
+  bottom: 6%;
+}

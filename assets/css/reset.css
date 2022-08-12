@@ -9,14 +9,24 @@
   font-family: var(--font-family);
 }
 
-img {
+img, .bx {
   vertical-align: middle;
   width: max-content;
+}
+img {
+  width: 100%;
+}
+
+a {
+  text-decoration: none;
 }
 
 section {
   margin-bottom: 4rem;
   scroll-margin: 4.5rem 0 0 0;
+}
+body {
+  overflow-x: hidden;
 }
 
 input[type=text],
