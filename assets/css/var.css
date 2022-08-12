@@ -3,7 +3,9 @@
 :root {
   --primary-color: #5B71FC;
   --primary-opacity-color: #5B72FB88;
+  --primary-dark: #5C47E6;
   --font-family: 'Montserrat', sans-serif;
   --content-font: #6e6e6e;
   --shadow: #333333;
+  --header-height: 3rem;
 }
