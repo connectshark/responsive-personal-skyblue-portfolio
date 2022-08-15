@@ -24,8 +24,8 @@ header.header {
   cursor: pointer;
 }
 .header .nav {
-  position: absolute;
-  top: 100%;
+  position: fixed;
+  top: var(--header-height);
   background-color: #ffffff88;
   width: 80%;
   right: -100%;
