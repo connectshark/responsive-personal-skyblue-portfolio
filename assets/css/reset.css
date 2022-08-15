@@ -25,6 +25,9 @@ section {
   margin-bottom: 4rem;
   scroll-margin: 4.5rem 0 0 0;
 }
+html {
+  scroll-behavior: smooth;
+}
 body {
   overflow-x: hidden;
 }

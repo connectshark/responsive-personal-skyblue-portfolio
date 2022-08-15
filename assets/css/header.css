@@ -59,7 +59,7 @@ header.header {
   bottom: -10px;
   left: 0;
 }
-.header .nav li.active a::before {
+.header .nav li a.active::before {
   background-color: var(--primary-color);
 }
 
@@ -75,11 +75,15 @@ header.header {
   .header .nav li {
     display: inline-block;
     margin-bottom: 0;
+    margin: 0 1rem;
   }
   .header .nav li a {
     color: #fff;
   }
   .header .menu {
     display: none;
+  }
+  .header .nav li a.active::before {
+    background-color: #fff;
   }
 }

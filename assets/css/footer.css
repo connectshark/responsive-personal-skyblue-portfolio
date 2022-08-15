@@ -29,6 +29,10 @@ footer .container .footer-item .social-list a {
   display: inline-block;
   margin: 0 .5rem;
 }
+footer .container .footer-item .nav-list a:hover,
+footer .container .footer-item .social-list a:hover {
+  color: #fff;
+}
 
 
 @media screen and (min-width: 1024px) {
@@ -38,12 +42,12 @@ footer .container .footer-item .social-list a {
     justify-content: space-evenly;
   }
   footer .container .footer-item:nth-child(1) {
-    width: 40%;
+    width: 50%;
   }
   footer .container .footer-item:nth-child(2) {
-    width: 25%;
+    width: 30%;
   }
   footer .container .footer-item:nth-child(3) {
-    width: 25%;
+    width: 20%;
   }
 }
