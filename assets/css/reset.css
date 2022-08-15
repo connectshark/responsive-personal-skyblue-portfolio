@@ -40,3 +40,24 @@ textarea {
   background-color: #f5f5f5;
   appearance: none;
 }
+.sub-title {
+  color: var(--primary-dark);
+  margin-bottom: 2rem;
+  text-align: center;
+}
+.sub-title span {
+  position: relative;
+}
+
+.sub-title span::before {
+  content: '';
+  position: absolute;
+  width: 50%;
+  height: .2rem;
+  left: 0;
+  right: 0;
+  bottom: -.4rem;
+  margin: auto;
+  border-radius: 999rem;
+  background-color: var(--primary-dark);
+}

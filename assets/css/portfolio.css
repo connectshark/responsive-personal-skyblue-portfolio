@@ -1,0 +1,75 @@
+.portfolio .portfolio-container {
+  width: min(1200px, 90%);
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 2rem;
+}
+.portfolio .portfolio-container li {
+  grid-column: span 6;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 1rem;
+  overflow: hidden;
+  padding-top: 60%;
+  position: relative;
+}
+
+.portfolio .portfolio-container li a {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  transition: top .3s ease;
+  background-color: #ffffff88;
+  color: var(--shadow);
+  backdrop-filter: blur(10px);
+}
+.portfolio .portfolio-container li a span {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.portfolio .portfolio-container li:nth-child(1) {
+  background-image: url('../img/work1.jpg');
+}
+.portfolio .portfolio-container li:nth-child(2) {
+  background-image: url('../img/work2.jpg');
+}
+.portfolio .portfolio-container li:nth-child(3) {
+  background-image: url('../img/work3.jpg');
+}
+.portfolio .portfolio-container li:nth-child(4) {
+  background-image: url('../img/work4.jpg');
+}
+.portfolio .portfolio-container li:nth-child(5) {
+  background-image: url('../img/work5.jpg');
+}
+.portfolio .portfolio-container li:nth-child(6) {
+  background-image: url('../img/work6.jpg');
+}
+
+
+@media (hover: hover) {
+  .portfolio .portfolio-container li a {
+    top: 100%;
+  }
+  .portfolio .portfolio-container li:hover a {
+    top: 0;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .portfolio .portfolio-container li {
+    grid-column: span 3;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .portfolio .portfolio-container li {
+    grid-column: span 2;
+  }
+}

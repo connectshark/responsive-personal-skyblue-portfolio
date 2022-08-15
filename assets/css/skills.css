@@ -1,0 +1,56 @@
+.skills .skills-container {
+  display: grid;
+  gap: 2rem;
+  width: min(1200px, 90%);
+  margin: auto;
+}
+.skills .skills-container .skills-group h3 {
+  color: var(--primary-color);
+  font-weight: bold;
+  font-size: 1.5rem;
+  line-height: 3;
+}
+
+.skills .skills-container .skills-group ul {
+  font-size: 0;
+}
+
+
+.skills .skills-container .skills-group ul li {
+  font-size: 1rem;
+  display: inline-block;
+  padding: .5rem;
+  border-radius: .3rem;
+  background-color: #00000009;
+  color: var(--content-font);
+  margin: .6rem;
+  font-weight: bold;
+  transition: color .1s ease, background-color .1s ease;
+}
+
+.skills .skills-container .skills-group ul li:hover {
+  background-color: var(--primary-color);
+  color: #fff;
+}
+.skills .skills-container figure {
+  margin: auto;
+}
+
+@media screen and (min-width: 1024px) {
+  .skills .skills-container {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, auto);
+  }
+  .skills .skills-container .web-group {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+  }
+  .skills .skills-container .design-group {
+    grid-column: 1/ 2;
+    grid-row: 2 / 3;
+  }
+  .skills .skills-container figure {
+    grid-column: 2 / 3;
+    grid-row: 1 / 3;
+  }
+}
