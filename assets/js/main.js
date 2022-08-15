@@ -7,8 +7,6 @@ const scrollHandler = () => {
   let current = ''
   const pageOffset = window.pageYOffset
   sectionList.forEach(sect => {
-    console.log('pageOffset:', pageOffset)
-    console.log(sect.dataset.name, 'offsetTop:', sect.offsetTop)
     if (pageOffset >= sect.offsetTop - 105) {
       current = sect.dataset.name
     }
