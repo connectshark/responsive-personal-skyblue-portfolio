@@ -1,29 +1,34 @@
 .hero {
   background-color: var(--primary-color);
-  display: grid;
-  grid-template-columns: repeat(5, 1fr);
-  grid-template-rows: repeat(3, 1fr);
   box-sizing: border-box;
-  padding: 3rem 2rem 0;
+  padding: 3rem 0 0;
   position: relative;
 }
 
-.hero .title {
+.hero .container {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  width: min(1000px, 90%);
+  margin: auto;
+}
+
+.hero .container .title {
   grid-column: 1 / 4;
   grid-row: 1 / 2;
   color: #fff;
-  font-size: clamp(7rem, 11vw, 11rem);
+  font-size: clamp(7rem, 13vw, 12rem);
   text-shadow: 5px 5px 20px var(--shadow);
   line-height: 6rem;
 }
-.hero .hero-img {
+.hero .container .hero-img {
   grid-column: 2 / 6;
   grid-row: 2 / 4;
   height: 100%;
   object-fit: contain;
   object-position: bottom;
 }
-.hero .tip {
+.hero .container .tip {
   position: absolute;
   width: max-content;
   color: #fff;
@@ -41,18 +46,20 @@
 
 @media screen and (min-width: 768px) {
   .hero {
-    padding: 0 2rem 0;
+    padding: 0;
+  }
+  .hero .container {
     grid-template-rows: repeat(3, calc((100vh - var(--header-height)) / 3));
   }
-  .hero .hero-img {
+  .hero .container .hero-img {
     grid-column: 2 / 6;
     grid-row: 1 / 4;
     height: 100%;
     object-fit: contain;
     object-position: bottom;
   }
-  .hero .title {
-    grid-column: 2 / 4;
+  .hero .container .title {
+    grid-column: 1 / 3;
     grid-row: 1 / 3;
     line-height: 1;
   }

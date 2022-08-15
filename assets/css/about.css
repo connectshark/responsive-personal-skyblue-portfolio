@@ -1,13 +1,10 @@
-.about {
-  text-align: center;
-}
-
 .about h2 {
   color: var(--primary-dark);
   margin-bottom: 2rem;
+  text-align: center;
 }
 
-:is(.about) h2 span {
+.about h2 span {
   position: relative;
 }
 
@@ -24,42 +21,69 @@
   background-color: var(--primary-dark);
 }
 
-.about .figure {
+.about .container {
+  width: min(700px, 90%);
+  margin: auto;
+  text-align: center;
+}
+.about .container .figure {
   width: 10rem;
   height: 10rem;
   background-color: var(--primary-color);
   border-radius: 50%;
-  background-image: url('/assets/img/perfil.png');
+  background-image: url('./assets/img/perfil.png');
   background-size: 80%;
   background-repeat: no-repeat;
   background-position: center bottom;
   margin: 0 auto 3rem;
 }
 
-.about h3 {
+.about .container .content h3 {
   color: var(--primary-color);
   margin-bottom: 1rem;
 }
-.about h4 {
+.about .container .content h4 {
   color: var(--content-font);
   margin-bottom: 2rem;
 }
 
-.about p {
+.about .container .content p {
   color: var(--content-font);
-  width: min(600px, 90%);
+  width: 90%;
   margin: 0 auto 2rem;
 }
 
-.about .social li {
+.about .container .content .social li {
   display: inline-block;
   margin: 0 .5rem;
 }
 
-.about .social li a {
+.about .container .social li a {
   color: var(--content-font);
   transition: color .3s ease;
 }
-.about .social li a:hover {
+.about .container .social li a:hover {
   color: #333;
+}
+
+@media screen and (min-width: 768px) {
+  .about .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-align: left;
+    padding: 4rem 0;
+  }
+  .about .container .figure {
+    width: 250px;
+    height: 250px;
+    margin: 0;
+  }
+  .about .container .content {
+    width: 50%;
+  }
+  .about .container .content p {
+    width: 100%;
+    margin: 0 0 2rem;
+  }
 }
