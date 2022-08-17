@@ -17,6 +17,7 @@
 - 使用CSS變數
 - 使用script defer功能
 - 使用媒體查詢是否為手機裝置(hover: hover)
-- 捲動事件偵測
+- 捲動事件偵測(IntersectionObserver API)
+
 
 [影片連結](https://youtu.be/6cidbUHNZRQ)
